@@ -21,7 +21,7 @@ satellite_options: >-
   --foreman-proxy-tftp-managed false
   --foreman-proxy-puppetca true
   --enable-foreman-plugin-discovery
-  --foreman=plugin-tasks-automatic-cleanup "True"
+  --foreman=plugin-tasks-automatic-cleanup true
 
 satellite_settings:
   - name: "default_download_policy"
