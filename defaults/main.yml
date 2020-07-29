@@ -21,9 +21,24 @@ satellite_options: >-
   --foreman-proxy-tftp-managed false
   --foreman-proxy-puppetca true
   --enable-foreman-plugin-discovery
+  --foreman=plugin-tasks-automatic-cleanup "True"
 
 satellite_settings:
   - name: "default_download_policy"
     value: "immediate"
   - name: "errata_status_installable"
     value: "true"
+  - name: "unregister_delete_host"
+    value: "true"
+  - name: "template_sync_associate"
+    value: "new"
+  - name: "template_sync_branch"
+    value: "master"
+  - name: "template_sync_repo"
+    value: "ssh://git@github.mmm.com/SCS-RHEL/templatetest.git"
+  - name: "template_sync_force"
+    value: "true"
+  - name: "template_sync_lock"
+    value: "true"
+  - name: "template_sync_prefix"
+    value: "3M-"

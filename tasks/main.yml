@@ -1,12 +1,12 @@
 # task file for install
-- name: main | config firewalld
-  import_tasks: 1_firewalld.yml
+#- name: main | config firewalld
+#  import_tasks: 1_firewalld.yml
 
-- name: main | install theforeman prereq
-  import_tasks: 2_theforeman.yml
+#- name: main | install theforeman prereq
+#  import_tasks: 2_theforeman.yml
 
-- name: main | install satellite
-  import_tasks: 3_install.yml
+#- name: main | install satellite
+#  import_tasks: 3_install.yml
 
 - name: main | set satellite settings
   import_tasks: 4_settings.yml
